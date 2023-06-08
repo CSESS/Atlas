@@ -1,0 +1,27 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1686246152,
+        "narHash": "sha256-veWKDE4pc/AuFc2EIBBZBILPXaYtEBXQ8mqWQqs4JPA=",
+        "owner": "usertam",
+        "repo": "nixpkgs",
+        "rev": "dd0b23c98395f4e7f493df66ca83083e6263cfa7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "usertam",
+        "ref": "nixos-23.05-atlas",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
