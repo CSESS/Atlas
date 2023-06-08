@@ -10,7 +10,7 @@
 
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
+    nixpkgs.url = "github:usertam/nixpkgs/nixos-23.05-atlas";
   };
 
   outputs = { self, nixpkgs }: let
