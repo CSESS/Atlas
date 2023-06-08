@@ -29,6 +29,7 @@
         ./services/locate.nix
         ./services/openssh.nix
         ./services/rsyncd.nix
+        ./services/minecraft.nix
         ./hosts/common.nix
         ./hosts/atlas.nix
       ];
