@@ -11,13 +11,14 @@
 {
   inputs = {
     nixpkgs.url = "github:usertam/nixpkgs/nixos-23.05-atlas";
+    mcpkgs.url = "github:Infinidoge/nix-minecraft";
+    mcpkgs.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs }: let
-    specialArgs.lock = nixpkgs.lib.importJSON ./flake.lock;
-  in {
-    nixosConfigurations.atlas = nixpkgs.lib.nixosSystem {
-      inherit specialArgs;
+  outputs = { self, nixpkgs, mcpkgs }: {
+    nixosConfigurations.atlas = nixpkgs.lib.nixosSystem rec {
+      specialArgs.lock = nixpkgs.lib.importJSON ./flake.lock;
+      specialArgs.mcpkgs = mcpkgs.legacyPackages.${system};
       system = "aarch64-linux";
       modules = [
         ./programs/common.nix
