@@ -16,7 +16,7 @@
   };
 
   # Backport: Mount tmpfs on /tmp during boot.
-  boot.tmpOnTmpfs = true;
+  boot.tmp.useTmpfs = true;
 
   # Disable mounting metadata disk.
   fileSystems."/metadata".device = lib.mkForce "/dev/null";
