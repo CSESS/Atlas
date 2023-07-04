@@ -19,7 +19,7 @@
     nixosConfigurations.atlas = nixpkgs.lib.nixosSystem rec {
       specialArgs.lock = nixpkgs.lib.importJSON ./flake.lock;
       specialArgs.mcpkgs = mcpkgs.legacyPackages.${system};
-      system = "aarch64-linux";
+      system = "x86_64-linux";
       modules = [
         ./programs/common.nix
         ./programs/doas.nix
