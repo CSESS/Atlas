@@ -25,7 +25,16 @@
       enable-rcon = true;
       "rcon.password" = "cookiesloveu";
     };
-    serverIcon = ../assets/server-icon.png;
+    # serverIcon = ../assets/server-icon.png;
     openFirewall = true;
   };
+
+  system.activationScripts.minecraft-server-icon.text = with config.services.minecraft-server; ''
+    if [ ! -e ${dataDir} ]; then
+      mkdir -p ${dataDir}
+      chown minecraft:minecraft ${dataDir}
+    fi
+    ln -sf ${../assets/server-icon.png} ${dataDir}/server-icon.png
+    chown minecraft:minecraft ${dataDir}/server-icon.png
+  '';
 }
