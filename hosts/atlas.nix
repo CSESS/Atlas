@@ -25,4 +25,7 @@
   boot.kernel.sysctl."net.ipv4.tcp_keepalive_time" = 120;
   boot.kernel.sysctl."net.ipv4.tcp_keepalive_intvl" = 30;
   boot.kernel.sysctl."net.ipv4.tcp_keepalive_probes" = 8;
+
+  # Disable reboot on system upgrades.
+  system.autoUpgrade.allowReboot = false;
 }
