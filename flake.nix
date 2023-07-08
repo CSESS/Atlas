@@ -10,7 +10,7 @@
 
 {
   inputs = {
-    nixpkgs.url = "github:usertam/nixpkgs/nixos-23.05-atlas";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     mcpkgs.url = "github:Infinidoge/nix-minecraft";
     mcpkgs.inputs.nixpkgs.follows = "nixpkgs";
   };
