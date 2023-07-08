@@ -43,11 +43,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1686620835,
-        "narHash": "sha256-zdwLTz08FudySXUEYaMDgbXf0vnI3vntiYXc6Oovsxg=",
+        "lastModified": 1688781310,
+        "narHash": "sha256-6+prwFNbWtBi+LppAZV9gN4n0tV66qADfjHa8R+R/Q0=",
         "owner": "Infinidoge",
         "repo": "nix-minecraft",
-        "rev": "ef4fecbe4f039c03a500c892fd329e89485adb02",
+        "rev": "66664153ae87c169d69e99f1cc3491e8cb7b3033",
         "type": "github"
       },
       "original": {
@@ -58,16 +58,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1686246152,
-        "narHash": "sha256-veWKDE4pc/AuFc2EIBBZBILPXaYtEBXQ8mqWQqs4JPA=",
-        "owner": "usertam",
+        "lastModified": 1688679045,
+        "narHash": "sha256-t3xGEfYIwhaLTPU8FLtN/pLPytNeDwbLI6a7XFFBlGo=",
+        "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "dd0b23c98395f4e7f493df66ca83083e6263cfa7",
+        "rev": "3c7487575d9445185249a159046cc02ff364bff8",
         "type": "github"
       },
       "original": {
-        "owner": "usertam",
-        "ref": "nixos-23.05-atlas",
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
